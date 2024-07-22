@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro de atividades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="titulo">
+            <h1>Quadro de atividades</h1>
+        </div>
+    </nav>
+
+
+    <form>
+        <div class="novaAtividade">
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+
+                <div style="width: 79%;">
+                    <label for="tituloAtividade">Título da Atividade</label>
+                    <input id="tituloAtividadea"  type="text" placeholder="Título">
+                </div>
+                
+                <div style="width: 20%;">
+                    <label for="dataAtividadea">Data de criação</label>
+                    <input id="dataAtividadea" type="datetime-local" placeholder="Data de criação">
+        
+                </div>
+            </div>
+            
+
+           
+            <label for="descricaoAtividade">Descrição</label>
+            <textarea name="Descrição" id="descricaoAtividade"></textarea>
+
+            <div style="width: 100%; display: flex; justify-content: end;">
+                <button onclick="" id="botaoAdicionarAtividade" class="adicionarAtividade"><i class="mdi mdi-plus"></i> Adicionar</button>
+            </div>
+            
+        </div>
+        
+    </form>
+
+    <section>
+
+        <div class="titulo-quadro">
+
+            <div id="titulo-toDo" class="quadro-titulo">
+                <h3>To do</h3>
+            </div>
+
+            <div id="titulo-inProgress" class="quadro-titulo">
+                <h3>In progress</h3>
+            </div>
+
+            <div id="titulo-done" class="quadro-titulo">
+                <h3>Done</h3>
+            </div>
+        </div>
+
+        <div class="quadro">
+            <div id="quadro-toDo" class="quadroConteudo">
+                <div id="conteudo-toDo" class="conteudo">
+                    <div class="tituloConteudo">
+                        Titulo teste
+                    </div>
+
+                    <div class="descricaoConteudo">
+                        descricao teste
+                    </div>
+                    <div class="dataConteudo">
+                        data teste
+                    </div>
+
+                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
+                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div id="conteudo-toDo" class="conteudo">
+                    <div class="tituloConteudo">
+                        Titulo teste
+                    </div>
+
+                    <div class="descricaoConteudo">
+                        descricao teste
+                    </div>
+                    <div class="dataConteudo">
+                        data teste
+                    </div>
+
+                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
+                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="quadro-inProgress" class="quadroConteudo">
+                <div id="conteudo-inProgress" class="conteudo">
+                    <div class="tituloConteudo">
+                        Titulo teste
+                    </div>
+
+                    <div class="descricaoConteudo">
+                        descricao teste
+                    </div>
+                    <div class="dataConteudo">
+                        data teste
+                    </div>
+
+                    <div class="botaoConteudo">
+                        <button><i class="mdi mdi-arrow-left"></i> Voltar</button>
+                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="quadro-done" class="quadroConteudo">
+                <div id="conteudo-done" class="conteudo">
+                    <div class="tituloConteudo">
+                        Titulo teste
+                    </div>
+
+                    <div class="descricaoConteudo">
+                        descricao teste
+                    </div>
+                    <div class="dataConteudo">
+                        data teste
+                    </div>
+
+                    <div style="display: flex; justify-content: baseline;" class="botaoConteudo">
+                        <button ><i class="mdi mdi-arrow-left"></i> Voltar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+
+
+<script src="js/index.js"></script>
+</body>
+</html>
