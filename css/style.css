@@ -90,7 +90,7 @@ button {
     
 }
 
-.titulo-quadro {
+.tituloQuadro {
 
     height: 60px;
     margin-left: 10%;
@@ -102,7 +102,7 @@ button {
     /* border: 1px solid orangered;  */
 }
 
-.quadro-titulo {
+.conteudoTituloQuadro {
 
     border-radius: 3%;
     display: flex;
@@ -116,15 +116,15 @@ button {
 
 
 
-#titulo-toDo {
+#tituloToDo {
     background: #2D9BF0;
 }
 
-#titulo-inProgress {
+#tituloInProgress {
     background: #EEBD0A;
 }
 
-#titulo-done {
+#tituloDone {
     background: #21933B;
 }
 
@@ -150,15 +150,15 @@ button {
 }
 
 
-#conteudo-toDo {
+#conteudoToDo {
     border-bottom: 5px solid #2D9BF0;
 }
 
-#conteudo-inProgress {
+#conteudoInProgress {
     border-bottom: 5px solid #EEBD0A;
 }
 
-#conteudo-done {
+#conteudoDone {
     border-bottom: 5px solid #21933B;   
 }
 
