@@ -32,11 +32,21 @@ body{
     font-size: 34px;
 }
 
+.botaoNovaAtividade{
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .novaAtividade {
     padding: 10px;
     margin-left: 10%;
     margin-right: 10%;
     /* border: 1px solid red; */
+}
+
+.oculto{
+    display: none;
 }
 
 .novaAtividade input{
@@ -57,7 +67,7 @@ body{
 }
 
 
-button {
+.bnt-generico {
     width: 10%;
     cursor: pointer;
     background: rgb(33, 33, 102);
@@ -69,9 +79,22 @@ button {
     border-radius: 5px;
 }
 
+.bnt-delete {
+    text-decoration: none;
+    cursor: pointer;
+    border-style:none;
+    background: white;
+    color:rgb(33, 33, 102);
+}
+
+.required{
+    color: rgb(182, 1, 1);
+    font-size: 12px;
+}
 
 .quadro {
-    height: 600px;
+    
+    height: auto;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5px;
@@ -86,7 +109,8 @@ button {
     width: 33%;
     background: white;
     height: 600px;
-    border-radius: 3%;
+    border-radius: 10px;
+    overflow-y: auto;
     
 }
 
@@ -103,8 +127,8 @@ button {
 }
 
 .conteudoTituloQuadro {
-
-    border-radius: 3%;
+    
+    border-radius: 10px;
     display: flex;
     width: 33%;
     color: white;
@@ -131,13 +155,25 @@ button {
 .conteudo {
     margin: 8px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px grey;
     padding-bottom: 10px;
     /* border: 1px solid red; */
 }
 
+.headerConteudo{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.headerConteudo a{
+    cursor: pointer;
+
+}
+
 .tituloConteudo{
+    font-weight: 600;
     font-size: 18px;
     /* border: 1px solid blue; */
 }
@@ -145,20 +181,27 @@ button {
 .descricaoConteudo{
     margin-top: 5px;
     font-size: 15px;
-    height: 150px;
+    min-height: 100px;
+    height: auto;
+    text-align: justify;
+    white-space: normal;
     /* border: 1px solid green; */
 }
 
+.dataConteudo {
+    margin-top: 5px;
+    font-size: 15px;
+}
 
-#conteudoToDo {
+.conteudoToDo {
     border-bottom: 5px solid #2D9BF0;
 }
 
-#conteudoInProgress {
+.conteudoInProgress {
     border-bottom: 5px solid #EEBD0A;
 }
 
-#conteudoDone {
+.conteudoDone {
     border-bottom: 5px solid #21933B;   
 }
 

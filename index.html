@@ -16,127 +16,145 @@
     </nav>
 
 
-    <form>
-        <div class="novaAtividade">
+    <div class="botaoNovaAtividade">
+        <button class="bnt-generico" onclick="exibirFormularioNovaAtividade()"><i class="mdi mdi-plus"></i> Nova Atividade</button>
+    </div>
+
+    
+    <div id="formularioNovaAtividade" class="oculto">
+        <div  class="novaAtividade" >
             <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
 
                 <div style="width: 79%;">
                     <label for="tituloAtividade">Título da Atividade</label>
-                    <input id="tituloAtividadea"  type="text" placeholder="Título">
+                    <input id="tituloAtividade"  type="text" placeholder="Título" required>
+                    <p id="requiredTitulo" class="required oculto">Título é um campo Obrigatório</p>
                 </div>
                 
                 <div style="width: 20%;">
-                    <label for="dataAtividadea">Data de criação</label>
-                    <input id="dataAtividadea" type="datetime-local" placeholder="Data de criação">
-        
+                    <label for="dataAtividade">Data de criação</label>
+                    <input id="dataAtividade" type="datetime-local" placeholder="Data de criação" required>
+                    <p id="requiredData" class="required oculto">Data de criação é um campo Obrigatório</p>
                 </div>
             </div>
-            
-
-           
+        
             <label for="descricaoAtividade">Descrição</label>
-            <textarea name="Descrição" id="descricaoAtividade"></textarea>
+            <textarea name="Descrição" id="descricaoAtividade" required></textarea>
+            <p id="requiredDescricao" class="required oculto">Descrição é um campo Obrigatório</p>
 
             <div style="width: 100%; display: flex; justify-content: end;">
-                <button onclick="" id="botaoAdicionarAtividade" class="adicionarAtividade"><i class="mdi mdi-plus"></i> Adicionar</button>
+                <button class="bnt-generico" onclick="cancelarNovaAtividade()" id="botaoCancelarAtividade" style="margin-right: 10px;" ><i class="mdi mdi-cancel"></i> Cancelar</button>
+                <button class="bnt-generico" onclick="adicionarNovaAtividade()" id="botaoAdicionarAtividade" ><i class="mdi mdi-plus"></i> Adicionar</button>
             </div>
             
         </div>
         
-    </form>
+    </div>
 
     <section>
 
         <div class="tituloQuadro">
 
             <div id="tituloToDo" class="conteudoTituloQuadro">
-                <h3>To do</h3>
+                <h3>Não Iniciadas</h3>
             </div>
 
             <div id="tituloInProgress" class="conteudoTituloQuadro">
-                <h3>In progress</h3>
+                <h3>Em Andamento</h3>
             </div>
 
             <div id="tituloDone" class="conteudoTituloQuadro">
-                <h3>Done</h3>
+                <h3>Concluídas</h3>
             </div>
         </div>
 
         <div class="quadro">
             <div id="quadroToDo" class="quadroConteudo">
+                <!-- <div id="conteudoToDo" class="conteudo">
+                    <div class="headerConteudo">
+                        <div class="tituloConteudo">
+                            Titulo teste
+                        </div>
+                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
+                    </div>
+                    
+                    <div class="descricaoConteudo">
+                        descricao teste
+                    </div>
+                    <div class="dataConteudo">
+                        20/07/2024 14:05
+                    </div>
+
+                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
+                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
+                    </div>
+                </div>
+
                 <div id="conteudoToDo" class="conteudo">
-                    <div class="tituloConteudo">
-                        Titulo teste
+                    <div class="headerConteudo">
+                        <div class="tituloConteudo">
+                            Titulo teste
+                        </div>
+                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
                     </div>
 
                     <div class="descricaoConteudo">
                         descricao teste
                     </div>
                     <div class="dataConteudo">
-                        data teste
+                        20/07/2024 14:05
                     </div>
 
                     <div style="display: flex; justify-content: end;" class="botaoConteudo">
                         <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
                     </div>
-                </div>
-
-                <div id="conteudo-toDo" class="conteudo">
-                    <div class="tituloConteudo">
-                        Titulo teste
-                    </div>
-
-                    <div class="descricaoConteudo">
-                        descricao teste
-                    </div>
-                    <div class="dataConteudo">
-                        data teste
-                    </div>
-
-                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
-                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
 
             <div id="quadroInProgress" class="quadroConteudo">
-                <div id="conteudoInProgress" class="conteudo">
-                    <div class="tituloConteudo">
-                        Titulo teste
+                <!-- <div id="conteudoInProgress" class="conteudo">
+                    <div class="headerConteudo">
+                        <div class="tituloConteudo">
+                            Titulo teste
+                        </div>
+                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
                     </div>
 
                     <div class="descricaoConteudo">
-                        descricao teste
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis rerum minus exercitationem sed deserunt aperiam provident libero inventore voluptas laboriosam quisquam fugiat nihil quas vel vitae, sapiente beatae repellendus. Quas!</p->
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis rerum minus exercitationem sed deserunt aperiam provident libero inventore voluptas laboriosam quisquam fugiat nihil quas vel vitae, sapiente beatae repellendus. Quas!</p->
                     </div>
                     <div class="dataConteudo">
-                        data teste
+                        20/07/2024 14:05
                     </div>
 
-                    <div class="botaoConteudo">
+                    <div class="">
                         <button><i class="mdi mdi-arrow-left"></i> Voltar</button>
                         <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <div id="quadroDone" class="quadroConteudo">
-                <div id="conteudoDone" class="conteudo">
-                    <div class="tituloConteudo">
-                        Titulo teste
+                <!-- <div id="conteudoDone" class="conteudo">
+                    <div class="headerConteudo">
+                        <div class="tituloConteudo">
+                            Titulo teste
+                        </div>
+                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
                     </div>
-
                     <div class="descricaoConteudo">
                         descricao teste
                     </div>
                     <div class="dataConteudo">
-                        data teste
+                        20/07/2024 14:05
                     </div>
 
                     <div style="display: flex; justify-content: baseline;" class="botaoConteudo">
                         <button ><i class="mdi mdi-arrow-left"></i> Voltar</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
