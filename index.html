@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quadro de atividades</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -25,13 +26,13 @@
         <div  class="novaAtividade" >
             <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
 
-                <div style="width: 79%;">
+                <div class="tituloNovaAtividade">
                     <label for="tituloAtividade">Título da Atividade</label>
                     <input id="tituloAtividade"  type="text" placeholder="Título" required>
                     <p id="requiredTitulo" class="required oculto">Título é um campo Obrigatório</p>
                 </div>
                 
-                <div style="width: 20%;">
+                <div class="dataNovaAtividade">
                     <label for="dataAtividade">Data de criação</label>
                     <input id="dataAtividade" type="datetime-local" placeholder="Data de criação" required>
                     <p id="requiredData" class="required oculto">Data de criação é um campo Obrigatório</p>
@@ -52,109 +53,32 @@
     </div>
 
     <section>
-
-        <div class="tituloQuadro">
-
-            <div id="tituloToDo" class="conteudoTituloQuadro">
-                <h3>Não Iniciadas</h3>
-            </div>
-
-            <div id="tituloInProgress" class="conteudoTituloQuadro">
-                <h3>Em Andamento</h3>
-            </div>
-
-            <div id="tituloDone" class="conteudoTituloQuadro">
-                <h3>Concluídas</h3>
-            </div>
-        </div>
-
         <div class="quadro">
-            <div id="quadroToDo" class="quadroConteudo">
-                <!-- <div id="conteudoToDo" class="conteudo">
-                    <div class="headerConteudo">
-                        <div class="tituloConteudo">
-                            Titulo teste
-                        </div>
-                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
-                    </div>
-                    
-                    <div class="descricaoConteudo">
-                        descricao teste
-                    </div>
-                    <div class="dataConteudo">
-                        20/07/2024 14:05
-                    </div>
-
-                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
-                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
-                    </div>
+            <div class="quadroEtapa">
+                <div id="tituloToDo" class="conteudoTituloQuadro">
+                    <h3>Não Iniciadas</h3>
                 </div>
-
-                <div id="conteudoToDo" class="conteudo">
-                    <div class="headerConteudo">
-                        <div class="tituloConteudo">
-                            Titulo teste
-                        </div>
-                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
-                    </div>
-
-                    <div class="descricaoConteudo">
-                        descricao teste
-                    </div>
-                    <div class="dataConteudo">
-                        20/07/2024 14:05
-                    </div>
-
-                    <div style="display: flex; justify-content: end;" class="botaoConteudo">
-                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
-                    </div>
-                </div> -->
-
+                <div id="quadroToDo" class="quadroConteudo">
+                </div>
             </div>
-
+            <div class="quadroEtapa">
+                <div id="tituloInProgress" class="conteudoTituloQuadro">
+                    <h3>Em Andamento</h3>
+                </div>
+                <div id="quadroInProgress" class="quadroConteudo">
+                </div>
+            </div>
+            <div class="quadroEtapa">
+                <div id="tituloDone" class="conteudoTituloQuadro">
+                    <h3>Concluídas</h3>
+                </div>
+                <div id="quadroDone" class="quadroConteudo">
+                </div>
+            </div>
+            
             <div id="quadroInProgress" class="quadroConteudo">
-                <!-- <div id="conteudoInProgress" class="conteudo">
-                    <div class="headerConteudo">
-                        <div class="tituloConteudo">
-                            Titulo teste
-                        </div>
-                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
-                    </div>
-
-                    <div class="descricaoConteudo">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis rerum minus exercitationem sed deserunt aperiam provident libero inventore voluptas laboriosam quisquam fugiat nihil quas vel vitae, sapiente beatae repellendus. Quas!</p->
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis rerum minus exercitationem sed deserunt aperiam provident libero inventore voluptas laboriosam quisquam fugiat nihil quas vel vitae, sapiente beatae repellendus. Quas!</p->
-                    </div>
-                    <div class="dataConteudo">
-                        20/07/2024 14:05
-                    </div>
-
-                    <div class="">
-                        <button><i class="mdi mdi-arrow-left"></i> Voltar</button>
-                        <button>Avançar <i class="mdi mdi-arrow-right"></i></button>
-                    </div>
-                </div> -->
-
             </div>
             <div id="quadroDone" class="quadroConteudo">
-                <!-- <div id="conteudoDone" class="conteudo">
-                    <div class="headerConteudo">
-                        <div class="tituloConteudo">
-                            Titulo teste
-                        </div>
-                        <a style="font-size: 20px;"><i class="mdi mdi-delete-outline"></i></a>
-                    </div>
-                    <div class="descricaoConteudo">
-                        descricao teste
-                    </div>
-                    <div class="dataConteudo">
-                        20/07/2024 14:05
-                    </div>
-
-                    <div style="display: flex; justify-content: baseline;" class="botaoConteudo">
-                        <button ><i class="mdi mdi-arrow-left"></i> Voltar</button>
-                    </div>
-                </div> -->
             </div>
         </div>
 

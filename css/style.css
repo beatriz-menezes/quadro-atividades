@@ -66,6 +66,12 @@ body{
 
 }
 
+.tituloNovaAtividade{
+    width: 79%;
+}
+.dataNovaAtividade{
+    width: 20%;
+}
 
 .bnt-generico {
     width: 10%;
@@ -79,12 +85,20 @@ body{
     border-radius: 5px;
 }
 
+.bnt-generico:hover {
+    opacity: 0.8;
+}
+
 .bnt-delete {
     text-decoration: none;
     cursor: pointer;
     border-style:none;
     background: white;
     color:rgb(33, 33, 102);
+}
+
+.bnt-delete:hover{
+    color: rgb(182, 1, 1);
 }
 
 .required{
@@ -106,7 +120,6 @@ body{
 
 .quadroConteudo {
     /* border: 1px solid purple; */
-    width: 33%;
     background: white;
     height: 600px;
     border-radius: 10px;
@@ -114,23 +127,9 @@ body{
     
 }
 
-.tituloQuadro {
-
-    height: 60px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 1px solid orangered;  */
-}
-
 .conteudoTituloQuadro {
-    
     border-radius: 10px;
     display: flex;
-    width: 33%;
     color: white;
     justify-content: center;
     padding-left: 10px;
@@ -138,7 +137,9 @@ body{
     /*border: 1px solid orangered; */
 }
 
-
+.quadroEtapa{
+    width: 33%;
+}
 
 #tituloToDo {
     background: #2D9BF0;

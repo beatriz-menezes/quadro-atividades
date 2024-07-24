@@ -100,8 +100,6 @@ function adicionarNovaAtividade() {
         }
     }
 
-
-    
 }
 
 function avancarAtividade(id){
